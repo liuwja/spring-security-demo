@@ -16,4 +16,10 @@ public class SysRoleServiceImpl implements ISysRoleService {
     public SysRole selectById(Long id) {
         return sysRoleMapper.selectById(id);
     }
+
+    @Override
+    public SysRole selectByName(String name) {
+        return sysRoleMapper.selectByName(name);
+    }
+
 }
