@@ -4,6 +4,12 @@ spring:
     url: jdbc:mysql://39.106.13.15:3306/security?useUnicode=true&characterEncoding=utf-8&useSSL=true
     username: root
     password: root
+  # 配置redis共享
+  redis:
+    host: localhost
+    port: 6379
+  session:
+    store-type: redis
 mybatis:
   configuration:
     map-underscore-to-camel-case: true
@@ -11,3 +17,4 @@ server:
   servlet:
     session:
       timeout: 30m
+  port: 8090
